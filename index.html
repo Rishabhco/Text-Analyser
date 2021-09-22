@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEXT DECODER</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 id="head"><b>ANALYSE A WORD ,SENTENCE OR PARAGRAPH !!!!</b></h1>
+    <form>
+      <div class="input-group input-group-lg">
+        <!-- <span class="input-group-text" id="inputGroup-sizing-lg">Enter the text</span> -->
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          id="Enter"
+          placeholder="Enter the text here"
+        />
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="button" id="submit">
+          Submit
+        </button>
+        <button class="btn btn-primary" type="button" id="reset">Reset</button>
+      </div>
+    </form>
+    <!-- <div id="headd">Number of Vowels ,Consonants, Numbers and Special Characters like (comma $ semicolon ),etc And Spaces are:</div> -->
+    <div id="left">
+      <div>
+        <span id="vowels">No. of Vowels :</span>
+        <span id="vowel"></span>
+      </div>
+      <div>
+        <span id="const">No. of Consonants :</span>
+        <span id="consta"></span>
+      </div>
+      <div>
+        <span id="number">No. of Numbers :</span>
+        <span id="num"></span>
+      </div>
+    </div>
+    <div id="right">
+      <div>
+        <span id="special">No. of Special characters :</span>
+        <span id="sc"></span>
+      </div>
+      <div>
+        <span id="spaces">No. of Spaces :</span>
+        <span id="space"></span>
+      </div>
+      <div>
+        <span id="totals">Total no. of characters :</span>
+        <span id="total"></span>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
